@@ -59,11 +59,6 @@ Once that is complete, navigate to `https://<myuser>.github.io/superawesome/page
 You have now converted a Jupyter notebook to a static HTML page.
 
 
-### Exercise 2 - Update the CSS to change the style
-
-[Start Exercise 2](exercise2.md)
-
-
 
 ## Reference Commands
 
