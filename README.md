@@ -1,8 +1,5 @@
 # CS109A Sample Web site
 
-All the interesting stuff is in the gh-pages branch.
-
-The Multilevel modeling sample was copied from [https://github.com/fonnesbeck/multilevel_modeling](https://github.com/fonnesbeck/multilevel_modeling)
 
 ## Setup
 
@@ -18,18 +15,40 @@ The Multilevel modeling sample was copied from [https://github.com/fonnesbeck/mu
     to it as you make your changes.
 
 2. Publish your copy of the site as a public GitHub page
-    *
 
+    * From your copy of the project (`https://github.com/<myuser>/project_resources`),
+    click on  `Settings`
+    * Change the Project Name to something more friendly like `superawesome`. No spaces
+    are allowed.
+    * Continuing on the Settings page, scroll down to GitHub pages. Set the source to
+    `master branch /docs folder` and save it.
+    * Try it! In your browser, go to `https://<myuser>.github.io/superawesome`
 
-## Exercises
+    Congratulations! You have published your first web site.
+
 
 ### Exercise 1 - Export an iPython Notebook to HTML and publish it on the web
 
-[exercise1.md](Start Exercise 1)
+A copy of a full featured Jupyter notebook was obtained from  [https://github.com/fonnesbeck/multilevel_modeling](https://github.com/fonnesbeck/multilevel_modeling)
+
+A copy of this notebook and related data is in your local copy of the repository.
+We are now going to publish it to the web.
+
+If you'd like to examine it before publishing open `multilevel_modeling.ipynb` locally.
+
+To publish it to the web, from the terminal window, enter:
+
+```
+jupyter nbconvert --to html --template full --output docs/page1.html multilevel_modeling.ipynb
+```
+
+Once that is complete, navigate to `https://<myuser>.github.io/superawesome/page1.html`
+
+
 
 ### Exercise 2 - Update the CSS to change the style
 
-[exercise2.md](Start Exercise 2)
+[Start Exercise 2](exercise2.md)
 
 
 
