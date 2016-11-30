@@ -19,8 +19,8 @@
     * From your copy of the project (`https://github.com/<myuser>/project_resources`),
     click on  `Settings`
     * Change the Project Name to something more friendly like `superawesome`. No spaces
-    are allowed.
-    * Continuing on the Settings page, scroll down to GitHub pages. Set the source to
+    are allowed. Click on `rename`.
+    * Go back to the Settings page, scroll down to GitHub pages. Set the source to
     `master branch /docs folder` and save it.
     * Try it! In your browser, go to `https://<myuser>.github.io/superawesome`
 
@@ -36,14 +36,27 @@ We are now going to publish it to the web.
 
 If you'd like to examine it before publishing open `multilevel_modeling.ipynb` locally.
 
-To publish it to the web, from the terminal window, enter:
+1.   Convert the notebook to static HTML. Assuming the setup is complete, there
+is a local directory that corresponds to the project on GitHub
 
-```
-jupyter nbconvert --to html --template full --output docs/page1.html multilevel_modeling.ipynb
-```
+    In the terminal window, enter:
+
+    ```
+    cd project_resources
+    jupyter nbconvert --to html --template full --output docs/page1.html multilevel_modeling.ipynb
+    ```
+
+2.   Push the changes to GitHub
+
+  ```
+  git add .
+  git commit -m "notebook converted"
+  git push
+  ```
 
 Once that is complete, navigate to `https://<myuser>.github.io/superawesome/page1.html`
 
+You have now converted a Jupyter notebook to a static HTML page.
 
 
 ### Exercise 2 - Update the CSS to change the style
