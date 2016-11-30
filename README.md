@@ -57,24 +57,3 @@ is a local directory that corresponds to the project on GitHub
 Once that is complete, navigate to `https://<myuser>.github.io/superawesome/page1.html`
 
 You have now converted a Jupyter notebook to a static HTML page.
-
-
-
-## Reference Commands
-
-### Switching to the `gh-pages` branch
-
-From the terminal window, go to the directory that contains this project
-
-```
-cd project_resources
-git checkout gh-pages
-```
-
-### Switching back to the `master` branch
-
-From the terminal window, go to the directory that contains this project
-
-```
-git checkout master
-```
