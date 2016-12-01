@@ -19,9 +19,9 @@
     * From your copy of the project (`https://github.com/<myuser>/project_resources`),
     click on  `Settings`
     * Change the Project Name to something more friendly like `superawesome`. No spaces
-    are allowed. Click on `rename`.
+    are allowed. Click on `Rename`.
     * Go back to the Settings page, scroll down to GitHub pages. Set the source to
-    `master branch /docs folder` and save it.
+    `master branch /docs folder` and click on `Save`.
     * Try it! In your browser, go to `https://<myuser>.github.io/superawesome`
 
     Congratulations! You have published your first web site.
@@ -57,3 +57,17 @@ is a local directory that corresponds to the project on GitHub
 Once that is complete, navigate to `https://<myuser>.github.io/superawesome/page1.html`
 
 You have now converted a Jupyter notebook to a static HTML page.
+
+At this point, there is a choice to make:
+
+* Put your publishable content in the docs subdirectory of this project
+* Create a /docs directory of your current git project repository and change the
+project settings to publish it.
+
+### Exercise 2 - Link Pages
+
+In this exercise, a second notebook will be linked to the first notebook.
+
+### Exercise 3 - Customize Notebook
+
+CSS, Fonts, hide code
