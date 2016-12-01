@@ -121,6 +121,14 @@ Go back to terminal:
 jupyter nbconvert --to html --template full --output docs/page2.html Chapter8.ipynb
 ```
 
+As before, push the changes to GitHub
+
+  ```
+  git add .
+  git commit -m "notebook converted"
+  git push
+  ```
+
 From your browser, navigate to `https://<myuser>.github.io/superawesome/page2.html`
 and test the link to page 1.
 
