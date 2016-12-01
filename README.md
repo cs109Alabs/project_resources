@@ -116,22 +116,55 @@ Let's change this to a link to the first page:
 This is a *relative* link (no leading `http://`). By default, the browser will
 find the page in the same directory. Let's publish this page and test it.
 
-Go back to terminal:
+Go back to terminal, create the HTML and push to GitHub:
 ```
 jupyter nbconvert --to html --template full --output docs/page2.html Chapter8.ipynb
+git add .
+git commit -m "added links between pages"
+git push
 ```
-
-As before, push the changes to GitHub
-
-  ```
-  git add .
-  git commit -m "notebook converted"
-  git push
-  ```
 
 From your browser, navigate to `https://<myuser>.github.io/superawesome/page2.html`
 and test the link to page 1.
 
 ### Exercise 3 - Customize Notebook
 
-CSS, Fonts, hide code, embed an image
+Let's say you don't want your code messing up your nice web page.
+
+Open up the `Chapter8.ipynb` file again.
+
+Add a cell at the top with the following contents:
+```
+from IPython.display import HTML
+
+HTML('''<script>
+code_show=true;
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+}
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+```
+
+This will add a button on the top of the page that allows readers to toggle
+the code on or off. It is off by default.
+
+(Courtesy of [StackOverflow](http://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer))
+
+Go back to terminal, create the HTML and push to GitHub:
+```
+jupyter nbconvert --to html --template full --output docs/page2.html Chapter8.ipynb
+git add .
+git commit -m "add toggle button for code"
+git push
+```
+
+Now by default your HTML page will be clean, but still allow drill down into the code.
+
+Questions? Comments? Ask on Piazza.
