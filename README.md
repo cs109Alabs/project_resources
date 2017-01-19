@@ -167,4 +167,72 @@ git push
 
 Now by default your HTML page will be clean, but still allow drill down into the code.
 
+
+### Exercise 4 - Change the Styling
+
+We are now going to apply styling to fonts using CSS.
+
+In your favorite text editor, open `docs/custom.css`
+
+Look for the lines:
+```
+ h1 {
+        font-family: Helvetica, serif;
+    }
+ h4{
+```
+
+Insert the following three lines so the file looks like this:
+
+```
+ h1 {
+        font-family: Helvetica, serif;
+    }
+h3 {
+    font-family: "Raleway", Times, serif;
+}
+h4{
+```
+
+This changes the font of `h3` tags to be using the Raleway font.
+
+As before, regenerate the HTML and publish it:
+
+```
+jupyter nbconvert --to html --template full --output docs/page2.html Chapter8.ipynb
+git add .
+git commit -m "changed font for h3 tags"
+git push
+```
+
+*Learn more:*
+* [CSS](http://www.w3schools.com/css/default.asp)
+* Huge Choice of free fonts at [Google Fonts](https://fonts.google.com/)
+* Some books on font choices:
+   * _The Non-designer Design Book_ by Robin Williams. See Chapter 10 for Concord, Conflict and Contrast type of fonts. See also major categories of font like Old Style, Modern, Sans Serif, etc. There are six major categories.
+   * _Responsive Typography_ by Jason Pamental.
+
+
+### Exercise 5 - Embedding PDF
+
+Grab a copy a PDF to embed in your notebook, such as
+[this one](http://www.texample.net/media/tikz/examples/PDF/plane-partition.pdf)
+
+Save it into the local directory.
+
+Create a new cell in `Chapter8.ipynb` and embed the PDF in it:
+
+```
+from IPython.display import IFrame
+IFrame("./plane-partition.pdf", width=600, height=300)
+```
+
+The PDF will now render inside the notebook. However, when you
+publish it, the link will be broken because the ipynb file and
+the HTML file are in different directories. For simplicity,
+make a second copy of the PDF file in the `docs` subdirectory.
+
+Now when it is published, the PDF will appear correctly.
+
+
 Questions? Comments? Ask on Piazza.
