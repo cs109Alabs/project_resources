@@ -1,0 +1,496 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Finding News Curators in Twitter</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="44hsgvbh4uo5jqik2glh19ltt8">Finding News Curators in Twitter</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="Finding News Curators in Twitter_files/images/Finding News Curators in Twitter.jpg"></div>
+<h2 class="topic">
+<a name="7ptn4bqmkl8kqjpvqq6cfs8b1j">1- Abstract</a>
+</h2>
+<h3 class="topic">
+<a name="3u67hbqcjf0cclf2ha726v6pv8">&nbsp;main subject</a>
+</h3>
+<h3 class="topic">
+<a name="1re9ftqckb0j7e16sgg05gq8gt">&nbsp;&nbsp;Discover news curators</a>
+</h3>
+<h3 class="topic">
+<a name="43co35444iv4v7l3kkqirsk1f3">&nbsp;news curators</a>
+</h3>
+<h3 class="topic">
+<a name="0pkdv5d6sq9bl5gdc27vqeck2p">&nbsp;&nbsp;monitor a large variety of sources on a topic or around a story</a>
+</h3>
+<h3 class="topic">
+<a name="16qs05kink7stohhjnoe63u37r">&nbsp;&nbsp;carefully select interesting material on this topic</a>
+</h3>
+<h3 class="topic">
+<a name="418cahcuqee3br9q0kq2vvmoae">&nbsp;&nbsp;Share it with interested audience ranging from thousands to millions</a>
+</h3>
+<h3 class="topic">
+<a name="5bbgru0o20tj5n8avbql943ti8">&nbsp;&nbsp;A famous example</a>
+</h3>
+<h3 class="topic">
+<a name="2nh1lqv5q3ajg85progaf91ak1">&nbsp;&nbsp;&nbsp;Andy Carvin (@acarvin),</a>
+</h3>
+<h3 class="topic">
+<a name="56l4d57k6491tv5kdl49rtq337">&nbsp;&nbsp;&nbsp;&nbsp;collects news related to the Arabic world, during the Arab Spring</a>
+</h3>
+<h3 class="topic">
+<a name="7epi5kapu19pecqgk9csi02ia9">&nbsp;&nbsp;&nbsp;Qatari with 2022</a>
+</h3>
+<h3 class="topic">
+<a name="1f46ojivls156ual3hcjscl7h4">&nbsp;characterisitcs of Twitter curators</a>
+</h3>
+<h3 class="topic">
+<a name="57l1cdojg7qnl8ebdteudoqp8b">&nbsp;&nbsp;Topic-focused/unfocused</a>
+</h3>
+<h3 class="topic">
+<a name="280cv88jupmhnrhpq4l9kuc7d6">&nbsp;&nbsp;&nbsp;topic-unfocused curator</a>
+</h3>
+<h3 class="topic">
+<a name="0fsh64r985u9eulkhoblrkh3d4">&nbsp;&nbsp;&nbsp;&nbsp;collects contents about diverse topics</a>
+</h3>
+<h3 class="topic">
+<a name="78bl9g8h4a1ffhdjrie9imc6e1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seminating news articles about breaking news</a>
+</h3>
+<h3 class="topic">
+<a name="6ptdpov22jm67124p7rrf6028m">&nbsp;&nbsp;&nbsp;topic-focused curator</a>
+</h3>
+<h3 class="topic">
+<a name="5nbsnqa8rsc3s7rcbdrqkber08">&nbsp;&nbsp;&nbsp;&nbsp;who collects interesting information with a speci&#12;c focus</a>
+</h3>
+<h3 class="topic">
+<a name="6qqehucquihma77fbkj228hrre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geographic region</a>
+</h3>
+<h3 class="topic">
+<a name="17upc0th110ue34pfvbn3enf33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topic.</a>
+</h3>
+<h3 class="topic">
+<a name="3igcngst8s2ibf3vqqc5mn2v8g">&nbsp;&nbsp;With/without user commentary.</a>
+</h3>
+<h3 class="topic">
+<a name="1o5kliodfm3v5tulm7v770ghbd">&nbsp;&nbsp;&nbsp;include link to the news</a>
+</h3>
+<h3 class="topic">
+<a name="76rpuupql906cdeijloe9hqrsc">&nbsp;&nbsp;&nbsp;provide personal comments and opinions</a>
+</h3>
+<h3 class="topic">
+<a name="1cv8a3t7groguecesnpveotu0b">&nbsp;&nbsp;Human/automatic</a>
+</h3>
+<h3 class="topic">
+<a name="69ntuhir6o0uasvi3erjtsd17k">&nbsp;&nbsp;&nbsp;automatic news aggregators.</a>
+</h3>
+<h3 class="topic">
+<a name="7u2qtd44ihih03n6uo6dmfk60c">&nbsp;&nbsp;&nbsp;&nbsp;@BreakingNews</a>
+</h3>
+<h3 class="topic">
+<a name="1av8ju1dps1c8v95620ih88r74">&nbsp;&nbsp;&nbsp;focused on  specific topics,</a>
+</h3>
+<h3 class="topic">
+<a name="1so5dtn7mb0sanjbe9l2ed7fec">&nbsp;&nbsp;&nbsp;they do not provide any personal contents or opinions.</a>
+</h3>
+<h2 class="topic">
+<a name="78k5io19k71a8dlutsjjhpf4db">4- DATASETS</a>
+</h2>
+<h3 class="topic">
+<a name="6b4aasffo4map6di3m74aeuh6f">&nbsp;Source</a>
+</h3>
+<h3 class="topic">
+<a name="0icfjr173ado9r8162el7pfi7s">&nbsp;&nbsp;two online news websites</a>
+</h3>
+<h3 class="topic">
+<a name="49tdj7anbd7apjmod29vb405fo">&nbsp;&nbsp;&nbsp;BBC World Service (BBC)</a>
+</h3>
+<h3 class="topic">
+<a name="597gol8i2t82lf9d575jegdv1p">&nbsp;&nbsp;&nbsp;Al Jazeera English (AJE).</a>
+</h3>
+<h3 class="topic">
+<a name="6kn0s89e7ticv3reot7ui22hdg">&nbsp;collecting procedure</a>
+</h3>
+<h3 class="topic">
+<a name="76c8h6k8avo53e60o5rof46k9r">&nbsp;&nbsp;downloaded periodically the homepage of each of these websites,</a>
+</h3>
+<h3 class="topic">
+<a name="3r8vfhqfpc8lacigcvs1269630">&nbsp;&nbsp;get headline news</a>
+</h3>
+<h3 class="topic">
+<a name="71hqlngqraa0pkp8nn9789dtq7">&nbsp;&nbsp;get sampled at random a subset of news articles.</a>
+</h3>
+<h3 class="topic">
+<a name="2qnmthptspa55oclj38hp3mmn3">&nbsp;&nbsp;sampled articles</a>
+</h3>
+<h3 class="topic">
+<a name="1tg01i7rhuglc82i7cf8qjr3nd">&nbsp;&nbsp;&nbsp;use  Twitter's API</a>
+</h3>
+<h3 class="topic">
+<a name="63iebttgf95tq11jp1ekpmtb8c">&nbsp;&nbsp;&nbsp;&nbsp;&#12;nd tweets containing that article's URL.</a>
+</h3>
+<h3 class="topic">
+<a name="5tp1j59q2ovmkjmi82badbo94i">&nbsp;Data Cleaning</a>
+</h3>
+<h3 class="topic">
+<a name="7mnf18mnn0fi15pbu4lddqpboi">&nbsp;&nbsp;News crowds extraction</a>
+</h3>
+<h3 class="topic">
+<a name="4fe8rsk65gvm66gagprc3o68o5">&nbsp;&nbsp;&nbsp;News crowds</a>
+</h3>
+<h3 class="topic">
+<a name="7hc3qkhl7ogil3oueja6jke0vp">&nbsp;&nbsp;&nbsp;&nbsp;all the users who tweeted its URL within the first 6 hours after publication</a>
+</h3>
+<h3 class="topic">
+<a name="186kejg822stv8pi574pavkoda">&nbsp;&nbsp;Spam filtering.</a>
+</h3>
+<h3 class="topic">
+<a name="7sih7k1jml2l002lds3njinnfu">&nbsp;&nbsp;&nbsp;discarded accounts having</a>
+</h3>
+<h3 class="topic">
+<a name="3fpibmv5kun49105t0a6nu9dp7">&nbsp;&nbsp;&nbsp;&nbsp;more than 98 tweets per day</a>
+</h3>
+<h3 class="topic">
+<a name="06cckd7qv5721b5sdn534mr2pe">&nbsp;&nbsp;&nbsp;&nbsp;more than 90% of retweets</a>
+</h3>
+<h3 class="topic">
+<a name="21ksh3ju1b13cmg9eoh5egt6sm">&nbsp;&nbsp;&nbsp;&nbsp;more than 92% of tweets containing URLs</a>
+</h3>
+<h3 class="topic">
+<a name="0mcvo2q8tu7lqeu569maplab71">&nbsp;&nbsp;Exclude articles</a>
+</h3>
+<h3 class="topic">
+<a name="3m31tskjn8u06818jcn15rrpd0">&nbsp;&nbsp;&nbsp;did not generate a signi&#12;cant response</a>
+</h3>
+<h3 class="topic">
+<a name="1avlc10v5ml6q7i9n1kc247app">&nbsp;&nbsp;&nbsp;generated an extremely high one</a>
+</h3>
+<h3 class="topic">
+<a name="1tce0mgkkv1o9en083k2k89qdc">&nbsp;&nbsp;kept articles with</a>
+</h3>
+<h3 class="topic">
+<a name="2cm5a965e2onjj4tap879o2dt9">&nbsp;&nbsp;&nbsp;for BBC</a>
+</h3>
+<h3 class="topic">
+<a name="2fl5e14sffkp0ndqkfk3q5lovn">&nbsp;&nbsp;&nbsp;&nbsp;50 to150 users</a>
+</h3>
+<h3 class="topic">
+<a name="6pt5s0hokh9qoo30kj5rh5kk6i">&nbsp;&nbsp;&nbsp;for AJE</a>
+</h3>
+<h3 class="topic">
+<a name="3gpgm52hnsrq5vea3f0tfhr2q8">&nbsp;&nbsp;&nbsp;&nbsp;70 to 360 users</a>
+</h3>
+<h3 class="topic">
+<a name="1m3qtrdd00kjos626a9203h7ql">&nbsp;&nbsp;users with at least 1,000 followers,</a>
+</h3>
+<h3 class="topic">
+<a name="31h6g6jhlubf4cbvvg8q0uvs49">&nbsp;LABELING NEWS STORY CURATORS</a>
+</h3>
+<h3 class="topic">
+<a name="4ofksnt3vsflqip5uhvikh2unt">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img src="Finding News Curators in Twitter_files/574letdfraep6mvqlg2ufgr8mv.png"></p>
+<h3 class="topic">
+<a name="5p0qe8p7o2hoiu9oqpakovsgd2">&nbsp;&nbsp;two articles for dataset</a>
+</h3>
+<h3 class="topic">
+<a name="0dah306t6kp46pjine6ttm41tk">&nbsp;&nbsp;&nbsp;civil war in Syria</a>
+</h3>
+<h3 class="topic">
+<a name="6vgn25u8a1t4scpo35c43n084r">&nbsp;&nbsp;&nbsp;&nbsp;@RevolutionSyria</a>
+</h3>
+<h3 class="topic">
+<a name="5ue7uk7v1g7mohvqflp9n5boqi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user mentions (\@")</a>
+</h3>
+<h3 class="topic">
+<a name="68op7e751eu2i3mmtctlov5tto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,02</a>
+</h3>
+<h3 class="topic">
+<a name="78os8abf8g7kcaibsfs1bd210a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tweets per day,</a>
+</h3>
+<h3 class="topic">
+<a name="6q6d64n4rriotv1m3d4mtssu6v">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;189.13</a>
+</h3>
+<h3 class="topic">
+<a name="7neomhslh5qcd761en5mn97g3d">&nbsp;&nbsp;&nbsp;&nbsp;@UP_food</a>
+</h3>
+<h3 class="topic">
+<a name="16vv2n3629ghmg3qt1frfg05j8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tweets anything containing the word \food"</a>
+</h3>
+<h3 class="topic">
+<a name="0d5mh1eue380svpasm9s32q9d5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not relevant</a>
+</h3>
+<h3 class="topic">
+<a name="32slrhjjc3o3lnr5d2els05m4c">&nbsp;&nbsp;&nbsp;doping scandal of Lance Armstrong</a>
+</h3>
+<h3 class="topic">
+<a name="2oagspnecegvf6gjgdjregnua4">&nbsp;&nbsp;&nbsp;&nbsp;@KevinMcCallum</a>
+</h3>
+<h3 class="topic">
+<a name="3idt550gltqmcabml0o8d8v12b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user mentions (\@")</a>
+</h3>
+<h3 class="topic">
+<a name="2mkscfqu243c3gemri2itkkqvi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.77</a>
+</h3>
+<h3 class="topic">
+<a name="6dlp1n9catg4e6lkphtdj3uabd">&nbsp;&nbsp;&nbsp;&nbsp;@huyanxing</a>
+</h3>
+<h3 class="topic">
+<a name="2bpg5sct3ukm0l0vtb8l20985e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user mentions (\@")</a>
+</h3>
+<h3 class="topic">
+<a name="39o45o48lncmch426fea3k6h21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</a>
+</h3>
+<h3 class="topic">
+<a name="7bb0nvuej7r8rebc7j21rlq5vo">&nbsp;&nbsp;Labeling process</a>
+</h3>
+<h3 class="topic">
+<a name="71u1m8ihm1bmgp6cl8o40cbr66">&nbsp;&nbsp;&nbsp;sample of 20 news articles:</a>
+</h3>
+<h3 class="topic">
+<a name="5rlc5s06j7gkdcv3brt8ci6d3v">&nbsp;&nbsp;&nbsp;&nbsp;10 from AJE,</a>
+</h3>
+<h3 class="topic">
+<a name="18fg5ighnajdqcqspocd7359il">&nbsp;&nbsp;&nbsp;&nbsp;10 from BBC</a>
+</h3>
+<h3 class="topic">
+<a name="6juscqqnomsm352pupuq7jb65o">&nbsp;&nbsp;&nbsp;for each article</a>
+</h3>
+<h3 class="topic">
+<a name="0ll5f8gpultjo1tmk5vsh8mbat">&nbsp;&nbsp;&nbsp;&nbsp;sample random 10 users who posted the article</a>
+</h3>
+<h3 class="topic">
+<a name="4a9nv0qa3fk680vvunvtlqa7k9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tweets that were posted directly after the news article,</a>
+</h3>
+<h3 class="topic">
+<a name="59eanihte0ktobio6mt7qgl0i1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of follower</a>
+</h3>
+<h3 class="topic">
+<a name="3v5td5v0k8no53tf7e0hheqm28">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;profile description</a>
+</h3>
+<h3 class="topic">
+<a name="34ou8djvo8atm918jfignoksa3">&nbsp;&nbsp;&nbsp;three volunteers to provide labels.</a>
+</h3>
+<h3 class="topic">
+<a name="7baep6g972q3ggp1a15sbck41s">&nbsp;&nbsp;&nbsp;&nbsp;Q1</a>
+</h3>
+<h3 class="topic">
+<a name="3n37j248jetd56j42v9ecl0qtr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User interested in the topic ??</a>
+</h3>
+<h3 class="topic">
+<a name="0q8c61b9pcrvd3jpscn6igr0u5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes</a>
+</h3>
+<h3 class="topic">
+<a name="0vo9qc5ei6abldecaadvci89g4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;most tweet related to the topic</a>
+</h3>
+<h3 class="topic">
+<a name="425lql19v7die31cuh714c1uk9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May Be</a>
+</h3>
+<h3 class="topic">
+<a name="5ml4iu8qk0karg2pu8vg3q2ts0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many tweet about the topic</a>
+</h3>
+<h3 class="topic">
+<a name="7ebtqcfal7qbbbt5327l3o57p2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No</a>
+</h3>
+<h3 class="topic">
+<a name="4oklh39pk4gf4r8b44f6j1j9q0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not tweeting about the topic expect this tweet</a>
+</h3>
+<h3 class="topic">
+<a name="19j1napr9qfcv72kt7c30kh2li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unknown</a>
+</h3>
+<h3 class="topic">
+<a name="0v64adj4o5c4v67fol8g6l9il2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can not label</a>
+</h3>
+<h3 class="topic">
+<a name="5gu1j7docsvi9qndgtbfak158o">&nbsp;&nbsp;&nbsp;&nbsp;Q2</a>
+</h3>
+<h3 class="topic">
+<a name="232puqf8fucngrtj5777jj5m0j">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;human ?</a>
+</h3>
+<h3 class="topic">
+<a name="1fl8jca3dug13a6qo6nbkkoipv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Human</a>
+</h3>
+<h3 class="topic">
+<a name="0f46tbiqi9or9nsj4r8hv3gdmf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user has conversations and personal comments in his tweets.</a>
+</h3>
+<h3 class="topic">
+<a name="5bjn57n8863q8qvrhcg2s4ts5c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maybe automatic</a>
+</h3>
+<h3 class="topic">
+<a name="54jbkrdod56lc6oteq1pg2hh3u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Automatic</a>
+</h3>
+<h3 class="topic">
+<a name="7t4f1bjl1mekkuapg5l575go4c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unknown</a>
+</h3>
+<h3 class="topic">
+<a name="6tkjnps4mt08qqhefl7btvdq6h">&nbsp;&nbsp;&nbsp;&nbsp;discard may be and unknown </a>
+</h3>
+<h3 class="topic">
+<a name="3rfjlr86p7m0q80b7gfjqs96e0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img src="Finding News Curators in Twitter_files/2sju3ha7t7labfka1o2b29kcf5.png"></p>
+<h2 class="topic">
+<a name="2ejt445gj8i8eclq86tpn5203f">5 Features</a>
+</h2>
+<h3 class="topic">
+<a name="12f72e4pot0sp2ipq7l54g3dm7">&nbsp;visibility</a>
+</h3>
+<h3 class="topic">
+<a name="0ci32qdon4t4jc4em0d94dkub6">&nbsp;&nbsp;number of followers</a>
+</h3>
+<h3 class="topic">
+<a name="634blliocpq0e6idlpvu7mubqj">&nbsp;&nbsp;&nbsp;UserFollowersQ</a>
+</h3>
+<h3 class="topic">
+<a name="28m45dcrorcupdq99qsjn9ojc6">&nbsp;&nbsp;number of Twitter lists containing that user</a>
+</h3>
+<h3 class="topic">
+<a name="2ki5pdccr1jmiv7plubjkml0aq">&nbsp;&nbsp;&nbsp;UserListedQ</a>
+</h3>
+<h3 class="topic">
+<a name="3e8mmak6je3s3eaplsl3afl9c2">&nbsp;Tweeting activity</a>
+</h3>
+<h3 class="topic">
+<a name="14jks8l9kuq1d41n2tki458q4o">&nbsp;&nbsp;number of tweets per day</a>
+</h3>
+<h3 class="topic">
+<a name="3uhtddmg8btq1rlkh5loj6c30j">&nbsp;&nbsp;&nbsp;UserTweetsDailyQ</a>
+</h3>
+<h3 class="topic">
+<a name="62ohstei1eotqh486favpr84ou">&nbsp;&nbsp; fraction of retweet mark</a>
+</h3>
+<h3 class="topic">
+<a name="3mbaapef66sf03dekk4a04fh1r">&nbsp;&nbsp;&nbsp;UserFracRetweets,</a>
+</h3>
+<h3 class="topic">
+<a name="4ggms1pfinjrvoj4v10g3ur8sj">&nbsp;&nbsp; fraction of URL</a>
+</h3>
+<h3 class="topic">
+<a name="2j1ai431ub2ff1vb8rmaknccq0">&nbsp;&nbsp;&nbsp;UserFracURL,</a>
+</h3>
+<h3 class="topic">
+<a name="7dk9q94rt861hp83rqpr2idom9">&nbsp;&nbsp; fraction of user mention</a>
+</h3>
+<h3 class="topic">
+<a name="251vo2jilu321i9s4u5aaqa0au">&nbsp;&nbsp;&nbsp;UserFracMention</a>
+</h3>
+<h3 class="topic">
+<a name="07rqr6es7b8cdj3fd9lkf9bmgc">&nbsp;&nbsp; fraction of hashtag</a>
+</h3>
+<h3 class="topic">
+<a name="18cnohr0db2brdvrdcg4ue9qdr">&nbsp;&nbsp;&nbsp;UserFracHashtag</a>
+</h3>
+<h3 class="topic">
+<a name="0db27n2o47ed3ru663aubb0mtt">&nbsp;Topic focus</a>
+</h3>
+<h3 class="topic">
+<a name="0f87k0uevk4af7ubipmd0b01ja">&nbsp;&nbsp;many different articles</a>
+</h3>
+<h3 class="topic">
+<a name="7hh1ai557gno2lt953jri4sb2h">&nbsp;&nbsp;&nbsp;UserCrowdsQ</a>
+</h3>
+<h3 class="topic">
+<a name="29jptmoce4nukv655qfsv2bdjt">&nbsp;&nbsp;number of distinct sections of the crowds</a>
+</h3>
+<h3 class="topic">
+<a name="3gf4ol4p43gr7bennldraipv3l">&nbsp;&nbsp;&nbsp;UserSectionsQ</a>
+</h3>
+<h2 class="topic">
+<a name="7o1n4h0qlglpd1phsm53ep6mo0">6- Model</a>
+</h2>
+<h3 class="topic">
+<a name="51h90vifiatgsalmpthuolevam">&nbsp;Predict</a>
+</h3>
+<h3 class="topic">
+<a name="60aujpdqvts5e1ebgrp4hgu549">&nbsp;&nbsp;UserIsInterestedInStory</a>
+</h3>
+<h3 class="topic">
+<a name="30h92pausvibtqhrv5mmeoo448">&nbsp;&nbsp;UserIsHuman</a>
+</h3>
+<h3 class="topic">
+<a name="12p6uu087qfueuaao06v4t8m1g">&nbsp;Model</a>
+</h3>
+<h3 class="topic">
+<a name="4dnihi8j8ohiaal5mf99hhut4u">&nbsp;&nbsp;Single input feature</a>
+</h3>
+<h3 class="topic">
+<a name="7ffq408agjm1gjf1rpcqufbdu6">&nbsp;&nbsp;&nbsp;Simple model</a>
+</h3>
+<h3 class="topic">
+<a name="1nd2jfddc0qsfnmuvif78fs4lk">&nbsp;&nbsp;&nbsp;&nbsp;UserIsHuman</a>
+</h3>
+<h3 class="topic">
+<a name="7k8cdmahklo3brkrk7mtmq61g2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img src="Finding News Curators in Twitter_files/4058lptr9oh3crocpharq6qfp5.png"></p>
+<h3 class="topic">
+<a name="6j3jlojam8s87rbf85omfoc6vf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recal .85</a>
+</h3>
+<h3 class="topic">
+<a name="69jramoqap5jispm85pn46ptgi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Precision 0.85</a>
+</h3>
+<h3 class="topic">
+<a name="6a8onc20rpkfigdufhukgv0uut">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AUC 0.81</a>
+</h3>
+<h3 class="topic">
+<a name="1p5u4ck3of31oq6s1lr07ml9ed">&nbsp;&nbsp;&nbsp;&nbsp;UserIsInterestedInStory</a>
+</h3>
+<h3 class="topic">
+<a name="773fhfi8m9uv7287qdv4dei8pg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img src="Finding News Curators in Twitter_files/6cnmg7or0c1hu1808fj8e15fgq.png"></p>
+<h3 class="topic">
+<a name="17r00oqmmqmt8i3s4s1acph3m3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recal 0.48</a>
+</h3>
+<h3 class="topic">
+<a name="5i41boejqp0ihfba16h4n5qeen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Precision 0.93</a>
+</h3>
+<h3 class="topic">
+<a name="35qfkgv45dk8vs3o2rclbivlq4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AUC 0.83</a>
+</h3>
+<h3 class="topic">
+<a name="1ca3s9clmibksro2hrvjvfqb7v">&nbsp;&nbsp;&nbsp;random forest</a>
+</h3>
+<h3 class="topic">
+<a name="2nm7q38v86537p6ciugkjb2mgk">&nbsp;&nbsp;&nbsp;&nbsp;UserIsHuman</a>
+</h3>
+<h3 class="topic">
+<a name="49l1rlnst4moscdnadbsitd0g4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AUC 0.93</a>
+</h3>
+<h3 class="topic">
+<a name="4dudatqmlu1kn28mld14vruqtm">&nbsp;&nbsp;all input features</a>
+</h3>
+<h3 class="topic">
+<a name="2ia3crspd9qgfjbicaekv3ht2j">&nbsp;&nbsp;&nbsp;random forest</a>
+</h3>
+<h3 class="topic">
+<a name="0qpqq824md64t1r2qkp19ugg5k">&nbsp;&nbsp;&nbsp;&nbsp;UserIsInterestedInStory</a>
+</h3>
+<h3 class="topic">
+<a name="2kas7fqi8ohn8eh0mvgm256gqi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AUC 0.90</a>
+</h3>
+<h3 class="topic">
+<a name="28npn7ch3b77409b030q3qagg5">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img src="Finding News Curators in Twitter_files/7e0nsmmb7ti5j6dr05gpihipdt.png"></p>
+<h2 class="topic">
+<a name="33cuh31va0u75er66lrj5vj1mh">Future work</a>
+</h2>
+<h3 class="topic">
+<a name="0h3q7ftqhctvo80a57kkauk3ta">&nbsp;other variables can be incorporated</a>
+</h3>
+<h3 class="topic">
+<a name="25a76f5csrh75qnljio231b3mb">&nbsp;a user-centered method could be developed in which the input is a user and the output is a set of news curators.</a>
+</h3>
+<h3 class="topic">
+<a name="29lkbld6tgfmkp97ma97dllr15">&nbsp;Check automatic curators functionality in Twitter</a>
+</h3>
+</body>
+</html>

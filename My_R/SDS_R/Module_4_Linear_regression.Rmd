@@ -1,0 +1,47 @@
+# Simple Linear Regression
+
+getwd()
+setwd('C:/D/NUC_github/Amro/My_R/SDS_R')
+getwd()
+
+
+dataset = read.csv ('Salary_Data.csv')
+
+
+
+# Splitting the dataset into the training and testing set
+
+library(caTools)
+
+set.seed(123)
+split = sample.split(dataset$Salary,SplitRatio=2/3)
+split
+training_set = subset(dataset,split==TRUE)
+test_set     = subset(dataset,split==FALSE)
+
+
+# Fitting the training data
+mka_regressor= lm(formula=Salary ~ YearsExperience,data = training_set)
+
+summary(mka_regressor)
+
+# Predict the test set results
+y_pred = predict(mka_regressor,newdata= test_set)
+y_pred
+
+
+# Visualising the Results
+
+#install.packages('ggplot2')
+library(ggplot2)
+
+
+ggplot() +
+  geom_point(aes(x = training_set$YearsExperience, y = training_set$Salary),  colour = 'green' ) +
+  geom_line (aes(x = training_set$YearsExperience, y  = predict(mka_regressor,newdata= training_set)), colour = 'blue') +
+  geom_point(aes(x = test_set$YearsExperience, y = test_set$Salary),  colour = 'red' ) +
+  ggtitle('Salary Vs. Experience') +
+  xlab('Year of Experience')+
+  ylab('Salary')
+  
+  
